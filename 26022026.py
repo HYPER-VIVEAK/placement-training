@@ -77,3 +77,11 @@ for i in range(0,t1):#outer loop next line loop
 
 
 print("5--------------------------------------------------------------------------------------------------")
+a =5
+for i in range(0,a):
+    for j in range(0,a):
+        if(i==0 or   i==a-1 or j==0 or j==a-1):
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print("")
