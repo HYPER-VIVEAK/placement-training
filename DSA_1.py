@@ -64,5 +64,59 @@ while (pos>=0):
             st = st + str(j+1)
     pos -= 1
 print(int(st))
+set{}
+resizable
+grows and sinks
+Multiple data types
+no duplicates
+unorder,unindexed
+if the same element added again the second element is not accepted
+only add and remove is allowed append is not allowed
+
+
+
+disctionary
+
+'''
+
+
+
+
+
+#
+# b = int(input())
+# st = ''
+#
+# m = 0
+#
+# while b != 0:
+#
+#     m = b % 8
+#     b = b // 8
+#     st = str(m) + st
+# print(st)
+#
+#hexa to deci
+'''st=input()
+n=len(st)
+n=n-1
+num=0
+dic={
+    'A':10,
+    'B':11,
+    'C':12,
+    'D':13,
+    'E':14,
+    'F':15,
+}
+for i in st:
+ if i in dic:
+    num=num+dic[i]*16**n
+    n-=1
+ else:
+     num = num + int(i) * 16 ** n
+     n -= 1
+print(num)
+
 
 '''
