@@ -28,9 +28,41 @@ add
 remove
 append
 
+Tuple-()
+resizable_dynamic memory allocation
+
+immutable
+duplicates allowed
+ordered
+methods _count Index
 
 <-1->
 
 
-'''
 
+binary to ocata decimal
+a = int(input())
+b = a
+i = 1
+pos = 1
+st = ''
+
+while (True):
+    pos = i
+    if 8 ** i  >= a:
+        print("position:",1)
+        break
+    i += 1
+while (pos>=0):
+    for j in range(7, -1, -1):
+        if ((8 ** pos * j) <=b):
+            b = b -( 8 ** pos * j)
+            st = st + str(j)
+            print(j)
+            break
+        elif j == 0:
+            st = st + str(j+1)
+    pos -= 1
+print(int(st))
+
+'''
