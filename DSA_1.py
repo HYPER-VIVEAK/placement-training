@@ -120,3 +120,24 @@ print(num)
 
 
 '''
+# n=int(input())
+# m=0
+# for i in range(1,n+1):
+#   for j in range(1,i+1):
+#     print(m,end=" ")
+#     if m==0:
+#       m=1
+#     else:
+#       m=0
+#   print()
+'''l1=list(map(int,input().split()))
+l2=list(map(int,input().split()))
+for i in range(0,len(l2)):
+  for j in range(0,len(l1)):
+      if l2[i] < l1[j]:
+        l1[j]=l1[j]+l2[i]
+        l2[i]=l1[j]-l2[i]
+        l1[j]=l1[j]-l2[i]
+for i in l2:
+  print(i,end=" ")
+'''
