@@ -177,3 +177,8 @@
 # majorly used time complexity in worst case senerios.
 #         O(n),0(log n),0(n2)
 # """
+"""
+ponters:
+    Ponter can assess its Value, address of the own pinter value,and the value of the pointed value
+
+  """
