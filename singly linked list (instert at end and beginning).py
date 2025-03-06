@@ -53,7 +53,9 @@ lis.disp()
 
 
 """
-#Start your Coding Race
+
+
+# Start your Coding Race
 # Start your coding Race
 class Node:
     def __init__(self, data):
@@ -62,12 +64,10 @@ class Node:
 
 
 class Sll:
-    head=None
+    head = None
 
     def __init__(self):
         self.head == None
-
-
 
         return
 
@@ -77,7 +77,8 @@ class Sll:
             print(temp.data, end=" ")
             temp = temp.next
 
-s=Sll()
+
+s = Sll()
 s.inend(50)
 s.inend(9)
 s.inend(78)

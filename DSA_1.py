@@ -182,3 +182,66 @@ ponters:
     Ponter can assess its Value, address of the own pinter value,and the value of the pointed value
 
   """
+"""
+Linked list
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Sl:
+    def __init__(self):
+        self.head=None
+    def in_at_beginning(self,data):
+            new_node=Node(data)
+            new_node.next=self.head
+            self.head=new_node
+    def insertend(self,data):
+        new_node=Node(data)
+        temp = self.head
+        while (temp.next!=None):
+            temp = temp.next
+        temp.next=new_node
+   ''' def inseratpos(self,p,data):
+        ct=0
+        temp=self.head
+        while(temp):
+            if ct==p:
+                new_node=Node(data)
+                new_node.next =temp
+                temp.next=new_node
+                break
+            temp=temp.next
+            ct+=1'''
+
+
+    def delatend(self):
+        temp=self.head
+        while(temp.next.next!=None):
+            temp=temp.next
+        temp.next=None
+
+    def printing(self):
+        temp=self.head
+        while(temp):
+            print(temp.data,end="->")
+            temp=temp.next
+
+
+
+
+n = Sl()
+n.in_at_beginning(5)
+n.in_at_beginning(55)
+n.insertend(95)
+n.printing()
+n.inseratpos(1,33)
+n.printing()
+"""
+
+
+
+
+
+
+
+
