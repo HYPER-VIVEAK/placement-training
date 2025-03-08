@@ -71,6 +71,17 @@ class Sll:
 
         return
 
+    def inend(self, data):
+        nod = Node(data)
+        if self.head == None:
+            self.head = nod
+        else:
+            temp = self.head
+            while temp.next != None:
+                temp = temp.next
+            temp.next = nod
+
+        return
     def disp(self):
         temp = self.head
         while temp:

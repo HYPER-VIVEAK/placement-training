@@ -1,0 +1,11 @@
+linked liST
+adding at end:
+adding at end.
+adding at position
+finding middle element:
+        we can easily identify by using two pointers slow and fast pointers.
+        where:
+        slow pointer =slow.next
+        fast=fast.next.next
+        floyd warshall algorithm
+

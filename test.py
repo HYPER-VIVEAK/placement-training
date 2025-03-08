@@ -67,15 +67,83 @@ class Sll:
     def __init__(self):
         self.head == None
 
+    def inend(self, data):
+            nod = Node(data)
+            if self.head == None:
+                self.head = nod
+                return
+            else:
+                temp = self.head
+                while temp.next != None:
+                    temp = temp.next
+                temp.next = nod
+
+            return
+    def inatposition(self,pos,data):
+        nod = Node(data)
+        len=0
+        temp = self.head
+        while temp:
+            temp = temp.next
+            len+=1
 
 
+        if self.head == None:
+            print("Empty list")
+
+
+        else:
+            prev=self.head
+            nex=self.head.next
+            for i in range(1,len+1):
+                 if  pos==0:
+                   nod.next =self.head
+                   self.head = nod
+                   return
+                 elif pos==i:
+                     nod.next=nex
+                     prev.next=nod
+                     return
+
+                 prev=prev.next
+                 nex=nex.next
+    def delb(self):
+        temp=self.head
+        self.head=temp.next
         return
+    def dele(self):
+        temp=self.head
+        while temp.next.next!=None:
+          temp=temp.next
+        temp.next=None
+    def delatpos(self,pos):
+        len = 0
+        temp = self.head
+        while temp:
+            temp = temp.next
+            len += 1
+
+        if self.head == None:
+            print("Empty list")
+
+
+        else:
+            temp = self.head
+            for i in range(1, len + 1):
+                if pos == 0:
+                    self.head=temp.next
+                elif pos == i:
+                    temp.next=temp.next.next
+                    return
+                temp=temp.next
+
 
     def disp(self):
         temp = self.head
         while temp:
             print(temp.data, end=" ")
             temp = temp.next
+        print()
 
 s=Sll()
 s.inend(50)
@@ -83,3 +151,11 @@ s.inend(9)
 s.inend(78)
 s.inend(82)
 s.disp()
+
+s.inatposition(4,34)
+s.disp()
+s.delatpos(2)
+s.disp()
+
+
+
